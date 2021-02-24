@@ -1,0 +1,24 @@
+{
+  "name": "BackEnd_Express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.11.18",
+    "mongoose-encryption": "^2.0.3",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "underscore": "^1.12.0",
+    "validator": "^13.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
