@@ -11,6 +11,7 @@ const puerto = app.get('port');
 //MIDDLEWARES
 app.use(morgan('dev'));
 app.use(express.json());
+app.use(express.urlencoded({extends:false}));
 
 
 //ROUTES

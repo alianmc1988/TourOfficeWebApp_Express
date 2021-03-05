@@ -1,3 +1,4 @@
+const { intersection } = require('underscore');
 const Product = require('../models/product');
 
 const productCtrl = {};
@@ -14,7 +15,8 @@ productCtrl.getSelectedProduct = async(req,res)=>{
     res.json(product);
 };
 
-productCtrl.createProduct = async (req,res)=>{    
+productCtrl.createProduct = async (req,res)=>{ 
+	
    const product = new Product(req.body);
    await product.save();
    res.json({status:'Product saved'});
