@@ -4,6 +4,7 @@ const employeeCtrl = {};
 
 employeeCtrl.getEmployees = async (req, res)=>{
    const employees = await Employee.find();
+   
    res.json(employees);
 };
 
@@ -11,7 +12,7 @@ employeeCtrl.getSelectedEmployee = async(req,res)=>{
     
     const employee = await Employee.findById(req.params.id);
     
-    res.json(employee);
+    res.json(employee );
 };
 
 employeeCtrl.createEmployee = async (req,res)=>{

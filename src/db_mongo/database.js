@@ -1,8 +1,7 @@
 const mongoose = require ('mongoose');
 
-const URI = 'mongodb://localhost/salonBellezadb';
 
-mongoose.connect(URI)
+mongoose.connect('mongodb://localhost/tourOffice_DB')
     .then(db=> console.log('DB is connected'))
     .catch(err=> console.log(err));
     
