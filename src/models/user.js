@@ -6,7 +6,7 @@ const UserSchema = new Schema ({
 
     userName: { type: String, required: true },
     password:{ type: String, required: true },
-    credentials:{type:String,require}
+    credentials:{type:String,require} 
     
 })
  

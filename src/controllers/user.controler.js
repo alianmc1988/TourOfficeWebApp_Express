@@ -1,7 +1,5 @@
 //const user = require('../models/user');
 const User = require('../models/user');
-// Buscar cmo utilizar mongo-escape
-//const scape = require ('mongo-escape').scape;
 
 const userCtrl = {};
 
@@ -20,7 +18,7 @@ userCtrl.getSelectedUsers = async(req,res)=>{
 userCtrl.createUsers = async (req,res)=>{
    const user =  new User(req.body);
    await user.save();
-   res.json({status:'User saved'});
+   res.json({status:'200',message:'user saved'});
 };
 
 userCtrl.modifyUsers = async(req,res)=>{
@@ -31,7 +29,7 @@ userCtrl.modifyUsers = async(req,res)=>{
         password: req.body.password       
     }
     await User.findByIdAndUpdate(id, {$set: user}, {new: true});
-    res.json({status:'User Updated', user});
+    res.json({status: '200', user});
 };
 
 userCtrl.deleteUsers = async (req,res)=>{

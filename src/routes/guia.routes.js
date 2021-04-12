@@ -1,3 +1,4 @@
+// Rutas de Guia --> Hacia el Controlador
 const express = require ('express');
 const router = express.Router();
 
